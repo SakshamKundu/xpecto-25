@@ -85,6 +85,7 @@ const SigninPage = () => {
         await setActive({ session: signInAttempt.createdSessionId });
 
         router.push("/");
+        toast.success("Logged in successfully");
       } else {
         console.error(signInAttempt);
       }
